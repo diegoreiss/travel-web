@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', Arial, sans-serif;
+  background-color: #f1f1f1;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  outline: none;
+}
+
+header {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.20) 0px 5px 20px;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo {
+  display: flex;
+  gap: 12px;
+  color: #ff0000;
+}
+
+.travel-shortcut-container {
+  height: 600px;
+  background-image: url(imagens/london.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.travel-shortcut {
+  width: 60%;
+  background-color: #fff;
+}
+
+.travel-shortcut-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.travel-shortcut-header-item {
+  width: 100%;
+  padding: 10px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.travel-shortcut-header-item:hover,
+.travel-shortcut-header-item-active {
+  background-color: #ff0000;
+}
+
+.travel-shortcut-main {
+  width: 100%;
+  padding: 40px 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 20px;
+}
+
+.travel-shortcut-main-search {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.travel-shortcut-main-search-input {
+  width: 50%;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+}
+
+.travel-shortcut-main-search-input input {
+  padding: 10px;
+}
+
+.travel-shortcut-main-search-btn {
+  margin-top: 10px;
+}
+
+.travel-shortcut-main-search-btn span {
+  padding: 10px;
+  background-color: #616161;
+}
+
+/**/
+
+.grid-offers {
+  display: grid;
+  grid-template-columns: 1.9fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  'ct ny sf'
+  'ct pis par';
+  gap: 10px;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.main-grid-offers {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 20px;
+}
+
+.grid-offer {
+  padding: 10px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.grid-offer-1 {
+  height: 450px;
+  grid-area: ct;
+  background-image: url(imagens/cinqueterre.jpg);
+}
+
+.grid-offer-2 {
+  grid-area: ny;
+  background-image: url(imagens/newyork.jpg);
+}
+
+.grid-offer-3 {
+  grid-area: pis;
+  background-image: url(imagens/pisa.jpg);
+}
+
+.grid-offer-4 {
+  grid-area: sf;
+  background-image: url(imagens/sanfran.jpg);
+}
+
+.grid-offer-5 {
+  grid-area: par;
+  background-image: url(imagens/paris.jpg);
+}
+
+.main-flex-offers {
+  margin-top: 50px;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 10px;
+}
+
+.flex-offers {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.flex-offer {
+  width: 50%;
+  background-color: #fff;
+}
+
+.flex-offer-image {
+  height: 300px;
+  width: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.flex-offer-image-ocean {
+  background-image: url(imagens/ocean.jpg);
+}
+
+.flex-offer-image-mountains {
+  background-image: url(imagens/mountains.jpg);
+}
+
+.flex-offer-info {
+  padding: 15px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.flex-offer-info a {
+  padding-left: 10px;
+}
+
+.main-newsletter {
+  margin-top: 50px;
+  padding: 15px;
+  background-color: #606060;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 20px;
+}
+
+.form-newsletter {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+}
+
+.form-newsletter input {
+  padding: 10px;
+}
+
+.main-newsletter a {
+  margin: 10px 0;
+}
+
+.main-newsletter a span {
+  padding: 10px;
+  background-color: #f38981;
+}
+
+.main-contact {
+  margin-top: 50px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 20px;
+}
+
+.main-contacts {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+}
+
+.contact {
+  display: flex;
+  gap: 15px;
+}
+
+.form-contact {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 15px;
+}
+
+.form-contact input {
+  padding: 10px;
+}
+
+.form-contact a {
+  margin: 10px 0;
+}
+
+.form-contact a span {
+  padding: 10px 15px;
+  background-color: #000;
+}
+
+footer {
+  margin: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.opcacity {
+  opacity: 0.5;
+}
+
+.large {
+  font-size: 20px;
+}
+
+.small-text {
+  font-size: 0.85rem;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.white {
+  color: #fff;
+}
+
+.black {
+  color: #000;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+@media(max-width: 768px) {
+  main {
+    width: 97%;
+  }
+  .grid-offers {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-template-areas: 
+    'ct ny sf'
+    'ct pis par';
+    gap: 10px;
+  }
+
+  .grid-offer-1 {
+    height: 300px;
+  }
+
+  .flex-offer-image {
+    height: 150px;
+    width: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+}
+
+@media(max-width: 450px) {
+  .travel-shortcut-container {
+    height: 100%;
+    background-image: none;
+  }
+
+  .travel-shortcut {
+    width: 100%;
+  }
+
+  .main-grid-offers,
+  .main-flex-offers {
+    padding: 10px;
+  }
+
+  .grid-offers {
+      display: grid;
+      width: 100%;
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+      'ct'
+      'ny'
+      'sf'
+      'pis'
+      'par';
+      gap: 10px;
+  }
+
+  .grid-offer {
+    height: 300px;
+  }
+
+  .flex-offers {
+    flex-flow: column wrap;
+  }
+
+  .flex-offer {
+    width: 100%;
+  }
+
+  .main-newsletter {
+    margin: 20px 10px;
+  }
+
+  .main-contact {
+    margin: 20px 10px;
+  }
+
+}
+
+@media(max-width: 320px) {
+
+  .large {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .small-text {
+    font-size: 0.8rem;
+  }
+
+  .travel-shortcut-main-search {
+    flex-flow: row wrap;
+  }
+
+  .travel-shortcut-header-item {
+    font-size: 13px;
+  }
+
+  .travel-shortcut-main-search-input {
+    width: 100%;
+  }
+
+  .travel-shortcut-main-search-btn {
+    font-size: 14px;
+  }
+
+  .grid-offer {
+    height: 200px;
+  }
+  
+}
